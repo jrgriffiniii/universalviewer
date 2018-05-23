@@ -16,7 +16,7 @@ export class Panel {
     }
 
     create(): void {
-        $.subscribe(BaseEvents.RESIZE, () => {
+        $['subscribe'](BaseEvents.RESIZE, () => {
             this.resize();
         });
     }
