@@ -885,7 +885,8 @@ export class BaseExtension implements IExtension {
     }   
 
     getIIIFShareUrl(): string {
-        return this.helper.iiifResourceUri + "?manifest=" + this.helper.iiifResourceUri;
+        const canvas: Manifesto.ICanvas = this.helper.getCurrentCanvas();
+        return canvas.getCanonicalImageUri() + "?manifest=" + canvas.getCanonicalImageUri();
     }
 
     addTimestamp(uri: string): string {
