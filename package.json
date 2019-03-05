@@ -15,8 +15,7 @@
   "bugs": {
     "url": "https://github.com/universalviewer/universalviewer/issues"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "homepage": "https://github.com/universalviewer/universalviewer",
   "devDependencies": {
     "async": "^0.9.0",
