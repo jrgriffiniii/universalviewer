@@ -755,8 +755,8 @@ class BaseExtension implements IExtension {
     }
 
     getIIIFShareUrl(): string {
-        console.debug('Setting the URI to' + canvas.getCanonicalImageUri());
         const canvas: Manifesto.ICanvas = this.helper.getCurrentCanvas();
+        console.debug('Setting the URI to' + canvas.getCanonicalImageUri());
         return canvas.getCanonicalImageUri() + "?manifest=" + canvas.getCanonicalImageUri();
     }
 
